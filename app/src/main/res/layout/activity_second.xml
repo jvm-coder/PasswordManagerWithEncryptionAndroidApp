@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673AB7"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textViewHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#F38D8D"
+        android:gravity="center"
+        android:text="@string/secondHead"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewHead"
+        app:layout_constraintRight_toRightOf="@+id/textViewHead"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHead">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/name_label"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/textViewNameVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewName"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp"
+            android:layout_toEndOf="@+id/textViewName"
+            android:layout_toRightOf="@+id/textViewName"
+            android:text=""
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/textViewPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewName"
+            android:layout_alignStart="@+id/textViewName"
+            android:layout_alignLeft="@+id/textViewName"
+            android:text="@string/pass_label"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/textViewPassVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewNameVal"
+            android:layout_alignLeft="@+id/textViewNameVal"
+            android:layout_alignTop="@+id/textViewPass"
+            android:layout_toEndOf="@+id/textViewPass"
+            android:layout_toRightOf="@+id/textViewPass"
+            android:text=""
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:background="#A0ADF6"
+            android:text="@string/descript"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Password Manager</string>
+    <string name="button_add">ADD</string>
+    <string name="secondHead"><u>CREDENTIALS</u></string>
+    <string name="name_label"><u>Name</u> : </string>
+    <string name="pass_label"><u>Password</u> : </string>
+    <string name="descript">This app uses <u>ADVANCED ENCRYPTION STANDARD(AES) to encrypt your passwords and then the encrypted passwords are stored in the storage of your phone.</u></string>
+    <string name="alertNameLabel"><u>Name</u></string>
+    <string name="alertPassLabel"><u>Password</u></string>
+</resources>
